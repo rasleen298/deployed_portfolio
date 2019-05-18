@@ -136,5 +136,5 @@ MEDIA_URL='/media/'#if someone wants to access a media file, where to go?
 
 try:
     from local_settings import *
-exceptImportError:
+except ImportError as e:
     pass
