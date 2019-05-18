@@ -133,3 +133,8 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')#suppose we want to store in media fo
 #it wont be getting saved in database
 
 MEDIA_URL='/media/'#if someone wants to access a media file, where to go?
+
+try:
+    from local_settings import *
+exceptImportError:
+    pass
