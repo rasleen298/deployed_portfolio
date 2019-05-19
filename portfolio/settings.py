@@ -135,6 +135,6 @@ MEDIA_ROOT=os.path.join(BASE_DIR, 'media/')#suppose we want to store in media fo
 MEDIA_URL='/media/'#if someone wants to access a media file, where to go?
 
 try:
-    from local_settings import *
+    from .local_settings import *
 except ImportError as e:
     pass
